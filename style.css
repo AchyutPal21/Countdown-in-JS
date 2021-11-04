@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, gold, #7dd56f);
+}
+
+.get__data {
+  width: 40%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 8rem auto 0;
+  border-radius: 2rem;
+  border: 2px solid white;
+}
+
+.get__data h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: white;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.form__data {
+  /* border: 2px solid red; */
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2.5rem);
+  grid-gap: 2rem 1rem;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.form__data input {
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: black;
+}
+input::placeholder {
+  color: black;
+  opacity: 0.4;
+}
+
+.form__data label {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: white;
+}
+.form__data label::after {
+  content: ":";
+}
+
+.btn__submit__input {
+  width: 8rem;
+  height: 4rem;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  color: white;
+  background: dodgerblue;
+  margin-top: 2.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* //////////////////////////////////////// */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: capitalize;
+  text-align: center;
+
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.timers {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem 3rem;
+}
+
+.times__day__text,
+.times__hr__text,
+.times__min__text,
+.times__sec__text {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Time</title>
+    <link
+      rel="shortcut icon"
+      href="./imgs/countdown_img.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="get__data">
+      <h2 class="on__visiting">Set your Required info below</h2>
+      <form class="form__data" action="">
+        <label for="occasion_title">Occasion</label>
+        <input type="text" id="occasion_title" placeholder="Set Heading" />
+        <label for="for_date">For Date</label>
+        <input type="date" name="" id="for_date" />
+      </form>
+      <button type="submit" class="btn__submit__input">Submit</button>
+    </div>
+    <div class="container hidden">
+      <h1 class="countdown__title">Happy New Year</h1>
+      <div class="timers">
+        <div class="times__days">10</div>
+        <div class="times__hours">12</div>
+        <div class="times__minutes">50</div>
+        <div class="times__seconds">30</div>
+        <p class="times__day__text">Days</p>
+        <p class="times__hr__text">Hours</p>
+        <p class="times__min__text">Minutes</p>
+        <p class="times__sec__text">Seconds</p>
+      </div>
+    </div>
+  </body>
+</html>
