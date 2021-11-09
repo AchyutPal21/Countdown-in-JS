@@ -14,8 +14,8 @@ body {
 }
 
 .get__data {
-  width: 40%;
-  height: 20rem;
+  width: 50%;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -36,10 +36,10 @@ body {
 
 .form__data {
   /* border: 2px solid red; */
-  width: 40%;
+  width: 45%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 2.5rem);
+  grid-template-rows: repeat(3, 2.5rem);
   grid-gap: 2rem 1rem;
   text-align: center;
   margin-top: 1.4rem;
@@ -54,7 +54,6 @@ body {
 }
 input::placeholder {
   color: black;
-  opacity: 0.4;
 }
 
 .form__data label {
@@ -64,6 +63,19 @@ input::placeholder {
 }
 .form__data label::after {
   content: ":";
+}
+
+select {
+  outline: none;
+  border: none;
+  margin: 0;
+  text-align: center;
+  border-radius: 4px;
+  background-color: white;
+}
+
+option {
+  text-align: center;
 }
 
 .btn__submit__input {

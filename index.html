@@ -14,16 +14,33 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
+    <!-- form Div -->
     <div class="get__data">
       <h2 class="on__visiting">Set your Required info below</h2>
       <form class="form__data" action="">
         <label for="occasion_title">Occasion</label>
         <input type="text" id="occasion_title" placeholder="Set Heading" />
-        <label for="for_date">For Date</label>
-        <input type="date" name="" id="for_date" />
+        <label for="time__type">Duration</label>
+        <select name="Time type" id="time__type">
+          <option value="days" selected>For Days</option>
+          <option value="hours">For Hours</option>
+        </select>
+        <!-- input Days date -->
+        <label class="for__days_label" for="for_date">Set Date</label>
+        <input class="for__days_input" type="date" id="for_date" />
+        <!-- input hours -->
+        <label class="for__hours_label" for="for_date">Set Hours</label>
+        <input
+          class="for__hours_input"
+          type="number"
+          id="for_hours"
+          placeholder="Hours"
+        />
       </form>
       <button type="submit" class="btn__submit__input">Submit</button>
     </div>
+
+    <!-- Countdown time div -->
     <div class="container hidden">
       <h1 class="countdown__title">Happy New Year</h1>
       <div class="timers">
